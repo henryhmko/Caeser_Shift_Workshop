@@ -1,9 +1,9 @@
 # Caeser_Shift_Workshop
 
-This project will lead up to making a working replica of an Enigma Machine using Python.
+This project consists of hacks tinkering with Caeser Shift. Decryption/encryption methods as well as applications of the technique are explored. 
 
 Ongoing subprojects:
-
+None -- Workshop finished for now(03.24.2020). 
 
 Completed subprojects:
 1. Caeser Shift Encoder -- Takes in a string, shift('a' for Caeser A Shift, 'b' for Caesar B Shift, etc.) and outputs the encoded version of that string.
