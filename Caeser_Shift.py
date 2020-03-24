@@ -15,6 +15,15 @@ Output: str(decrypted text)
 
 >>>caesar_decoder('cdef', 'c'):
 'abcd'
+
+>>>caesar_shift("abcd", 'c', 'encode')
+'cdef'
+
+>>>caesar_shift('cdef', 'c', 'decode')
+'abcd'
+
+>>>advanced_caesar_decoder('td avib ozv wzno ozv')
+'yi fang tea best tea'
 """
 
 eng_dict = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8,
