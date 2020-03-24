@@ -1,4 +1,4 @@
-# Enigma_Workshop
+# Caeser_Shift_Workshop
 
 This project will lead up to making a working replica of an Enigma Machine using Python.
 
