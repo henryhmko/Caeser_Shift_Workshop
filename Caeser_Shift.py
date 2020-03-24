@@ -32,6 +32,9 @@ eng_dict = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8,
 
 
 def caesar_encoder(text, shift):
+    """Takes in a string, shift('a' for Caeser 'A' Shift, 'b' for Caesar 'B' Shift, etc.) and outputs the encoded version of that string.
+    """
+
     text = text.lower()
     encoded_str = ''
     index = eng_dict[shift]
@@ -46,6 +49,8 @@ def caesar_encoder(text, shift):
 
 
 def caesar_shift(text, shift, action):
+    """ Takes in a string, shift, and command 'encode' or 'decode'. Outputs encoded/decoded string.
+    """
     text = text.lower()
     encoded_str = ''
     index = eng_dict[shift]
@@ -65,6 +70,8 @@ def caesar_shift(text, shift, action):
 
 
 def advanced_caesar_decoder(text):
+    """Runs through all possibilities of decoded text and returns the correct decoded version.
+    """
     all_decipher = []
 
     for shift in eng_dict.keys():
