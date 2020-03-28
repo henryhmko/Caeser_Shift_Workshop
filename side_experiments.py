@@ -43,9 +43,14 @@ def eng_to_kor_encoder(text):
 def kor_encoder(text):
     encoded = ''
     for char in list(text): #for each korean character
-        encoded += str(ord(letter))
+        encoded += str(ord(char))
     return hex(int(encoded)) #convert to hexadecimal
 
 def kor_decoder(text): #"text" should be without strings
     decoded = ''
     code = int(text)
+    while code:
+        char = code % (10 ** 5)
+        decoded += chr(char)
+        code //= 10 ** 5
+    return decoded[::-1]
